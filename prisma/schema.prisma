@@ -1,0 +1,15 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Project {
+  id   Int    @id @default(autoincrement())
+  slug String
+  name String
+  path String @default("/dashbaord")
+}

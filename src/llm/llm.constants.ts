@@ -1,0 +1,1 @@
+export const LLM_SERVICE_TOKEN = 'LLM_SERVICE';
